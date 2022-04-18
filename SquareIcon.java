@@ -33,6 +33,10 @@ public class SquareIcon implements Icon{
         return name;
     }
 
+    public Color getColor() {
+        return color;
+    }
+
     @Override
     public void paintIcon(Component c, Graphics g, int x, int y) {
 
