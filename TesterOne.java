@@ -10,7 +10,11 @@ public class TesterOne {
         JPanel panel = new JPanel();    
         panel.setBorder(BorderFactory.createEmptyBorder(30,30,10,30));
         panel.setLayout(new GridLayout(0, 1));
-        panel.add(new JLabel(new CompositeIcon()));
+
+        CompositeIcon parent = new CompositeIcon();
+        //parent.addIcon(new SquareIcon(), 50, 50);
+        panel.add(new JLabel(parent));
+        panel.add(new JLabel(new SquareIcon()));
 
 
 
