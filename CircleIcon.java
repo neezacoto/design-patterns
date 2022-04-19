@@ -1,6 +1,5 @@
 import java.awt.Component;
 import java.awt.Graphics;
-import java.util.ArrayList;
 
 import javax.swing.*;
 import java.awt.*;
@@ -19,13 +18,13 @@ public class CircleIcon implements Icon{
     }
     @Override
     public int getIconHeight() {
-        // TODO Auto-generated method stub
+        
         return height;
     }
 
     @Override
     public int getIconWidth() {
-        // TODO Auto-generated method stub
+        
         return width;
     }
 

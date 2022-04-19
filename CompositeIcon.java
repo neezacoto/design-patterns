@@ -82,8 +82,6 @@ public class CompositeIcon implements Icon {
         for(IconLeaf i : icons) {
             i.getIcon().paintIcon(c, g, i.getX() + x, i.getY() + y);
         }
-        
-
     }
 
     public void addIcon(Icon icon,int x, int y){
@@ -91,7 +89,7 @@ public class CompositeIcon implements Icon {
     }
 
     /**
-     * Creates Icon Objects to be stored
+     * Creates Icon Objects with desired render coordinates
      */
     private class IconLeaf{
         private Icon icon;
@@ -120,10 +118,10 @@ public class CompositeIcon implements Icon {
 
     @Override 
     public String toString() {
-        String str = "Parent";
+        String str = name + ":";
 
         for(IconLeaf i : icons) {
-            str += "\n" + i.getIcon().getClass().getSimpleName();
+            str += "\n" + i.getIcon().getClass().getSimpleName() + "x: " + i.getX() + "y: ";
         }
 
         return str;

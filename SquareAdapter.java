@@ -25,4 +25,6 @@ public class SquareAdapter extends JComponent{
         g.drawRect( 0 , 0, gIcon.getIconWidth() ,gIcon.getIconHeight());
         g.dispose();
     }
+
+    
 }
